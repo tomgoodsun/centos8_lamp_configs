@@ -1,9 +1,9 @@
-# centos7_lamp_configs
-Samples of configuration files for LAMP environment on CentOS 7
+# centos8_lamp_configs
+Samples of configuration files for LAMP environment on CentOS 8
 
 For more information, please see https://docs.google.com/document/d/12VbZYST8h0rxLE18c0xdS_PHvkq-AcLYVa-ONuPe5dU
 
-# CentOS 7.x LAMP環境構築マニュアル
+# CentOS 8.x LAMP環境構築マニュアル
 インストール用のOSイメージをダウンロード
 
 - [00.初期設定](00.初期設定.md)
