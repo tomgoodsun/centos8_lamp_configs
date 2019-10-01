@@ -1,0 +1,14 @@
+[Unit]
+Description=Redis persistent key-value database
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/redis-server /etc/redis_6380.conf --daemonize no
+ExecStop=/usr/bin/redis-cli -p 6380 shutdown
+User=redis
+Group=redis
+
+[Install]
+WantedBy=multi-user.target
+
