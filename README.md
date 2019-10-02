@@ -21,7 +21,7 @@ For more information, please see https://docs.google.com/document/d/12VbZYST8h0r
 
 - httpd
 - mysqld
-- ntpd
+- chrony
 - samba
 - memcached
 
@@ -31,6 +31,6 @@ For more information, please see https://docs.google.com/document/d/12VbZYST8h0r
 ここで一旦rebootして、すべて正常に起動できるかを確認する。
 
 ```bash
-[root@centos6 ~]# reboot
+[root@centos8 ~]# reboot
 ```
 
