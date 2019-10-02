@@ -1,0 +1,19 @@
+#
+# MySQL 8.0.4 introduced 'caching_sha2_password' as its default authentication plugin.
+# It is faster and provides better security then the previous default authentication plugin.
+#
+# Until now (09/2018), it does not work with some other software (eg. MariaDB client, MariaDB connectors,  ...)
+#
+# This configuration file changes MySQL default server configuration, so it behaves the same way as in MySQL 5.7.
+#
+# To change the behaviour back to the upstream default, comment out the following lines:
+
+[mysqld]
+default_authentication_plugin=mysql_native_password
+
+validate_password.length=4
+validate_password.mixed_case_count=0
+validate_password.number_count=0
+validate_password.policy=0
+validate_password.special_char_count=0
+
