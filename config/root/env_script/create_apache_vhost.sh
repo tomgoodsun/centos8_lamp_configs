@@ -15,8 +15,8 @@ GROUP=${3-webmaster}
 SERVER_ADMIN=${4-yourname@example.com}
 
 # Directory paths
-VHOSTS_DIR="/etc/httpd/vhosts"
-VHOST_CONFIG=$VHOSTS_DIR"/"$VHOST_NAME".conf"
+VHOSTS_DIR="/etc/httpd/conf.d"
+VHOST_CONFIG=$VHOSTS_DIR"/vhost-"$VHOST_NAME".conf"
 WEB_ROOT="/var/www/vhosts"
 SITE_ROOT=$WEB_ROOT"/"$VHOST_NAME
 DOCUMENT_ROOT=$SITE_ROOT"/public_html"
